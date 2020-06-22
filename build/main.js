@@ -34,7 +34,7 @@ client.on('message', function (msg) {
         var split = msg.content.substr(1).split(" ");
         switch (split[0]) {
             case "run":
-                handler.run(msg);
+                handler.run(msg, split[1]);
                 break;
             default:
                 msg.reply("\"" + split[0] + "\"" + " is an invalid command.");
