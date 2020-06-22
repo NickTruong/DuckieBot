@@ -1,0 +1,21 @@
+{
+  "name": "DuckieBot",
+  "version": "1.0.0",
+  "description": "A rubber duckie discord bot.",
+  "main": "main.js",
+  "author": "NTT",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "node": "^14.4.0",
+    "typescript": "^3.9.5"
+  },
+  "lib": [
+    "es2019"
+  ],
+  "scripts": {
+    "build": "yarn run tsc",
+    "start": "node build/main.js",
+    "build-start": "yarn build && yarn start"
+  }
+}
