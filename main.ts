@@ -17,7 +17,10 @@ client.on('message', msg => {
         let split = msg.content.substr(1).split(" ")
         switch(split[0]) {
             case "run":
-                handler.run(msg, split[1]);
+                handler.run(msg);
+                break;
+            case "languages":
+                handler.displayLanguages(msg);
                 break;
             default:
                 msg.reply("\"" + split[0] + "\"" + " is an invalid command.");
